@@ -87,8 +87,9 @@ main{padding:16px 14px}.panel{display:none}.panel.active{display:block}
     <div class="timeline">
       <button class="event important" data-detail="d1pre"><div class="time">04:05~</div><div><b>신답역 → 인천공항 T1</b><span>6002번 공항버스 · 04:19/04:31 추천</span></div><div class="arrow">›</div></button>
       <button class="event important" data-detail="d1a"><div class="time">08:25</div><div><b>인천 T1 출발</b><span>제주항공 → 나리타 T3</span></div><div class="arrow">›</div></button>
-      <button class="event" data-detail="d1b"><div class="time">10:50</div><div><b>나리타 T3 도착</b><span>입국심사·수하물 수령</span></div><div class="arrow">›</div></button>
-      <button class="event important" data-detail="d1c"><div class="time">12:10~</div><div><b>N'EX 발권 & 신주쿠 이동</b><span>왕복티켓 구매 · 지정좌석</span></div><div class="arrow">›</div></button>
+      <button class="event" data-detail="d1b"><div class="time">10:50</div><div><b>나리타 T3 도착</b><span>입국·수하물 → ATM 출금 → N'EX 수령</span></div><div class="arrow">›</div></button>
+      <button class="event important" data-detail="d1atm"><div class="time">11:10~</div><div><b>T3 Seven Bank ATM</b><span>트래블월렛 엔화 출금 → 이후 N'EX 수령</span></div><div class="arrow">›</div></button>
+      <button class="event important" data-detail="d1c"><div class="time">12:00~</div><div><b>N'EX 수령 & 신주쿠 이동</b><span>현장 당일 지정 · 12:23 우선 / 12:49 백업</span></div><div class="arrow">›</div></button>
       <button class="event" data-detail="d1d"><div class="time">14:00~</div><div><b>신주쿠 도착 → 호텔</b><span>짐 많으면 택시 추천</span></div><div class="arrow">›</div></button>
       <button class="event" data-detail="d1e"><div class="time">15:00</div><div><b>체크인 & 휴식</b><span>최소 45~60분</span></div><div class="arrow">›</div></button>
       <button class="event important" data-detail="d1f"><div class="time">16:30</div><div><b>1안 · 가구라자카 전통 골목</b><span>호텔→우시고메카구라자카 약 25분 · 젠코쿠지 → 골목 → 저녁</span></div><div class="arrow">›</div></button>
@@ -248,7 +249,56 @@ const DETAILS={
 </div>`},
 
  d1a:{t:'인천공항 출발',m:'10/29 08:25 · 인천 T1',b:`<div class="section"><h4>팁</h4><p>국제선이므로 최소 2시간 전 공항 도착 권장. 제주항공 체크인카운터 위치는 출발 전날 앱/공항 안내에서 확인.</p></div>`},
- d1b:{t:'나리타 T3 도착',m:'10/29 10:50',b:`<div class="section"><h4>도착 후</h4><ul><li>입국심사</li><li>수하물 수령</li><li>T2·3 철도역 표지 따라 이동</li></ul></div><div class="section"><h4>예상 소요</h4><p>약 60~90분. 첫날 일정은 이 시간 변동을 감안해 느슨하게 잡음.</p></div>`},
+ d1atm:{t:'T3 Seven Bank ATM',m:'나리타 도착 후 · 트래블월렛 엔화 출금',b:`
+<div class="section"><h4>추천 순서</h4>
+<ol>
+<li>나리타 T3 도착</li>
+<li>입국심사·수하물 수령</li>
+<li><b>T3 2층 Seven Bank ATM</b>에서 엔화 출금</li>
+<li>T2·3터미널역으로 이동</li>
+<li>N'EX 왕복티켓 수령 + 당일 지정석 선택</li>
+<li>신주쿠 이동</li>
+</ol></div>
+
+<div class="section"><h4>트래블월렛 출금</h4>
+<ul>
+<li><b>카드</b>: 트래블월렛 실물카드</li>
+<li><b>ATM</b>: Seven Bank ATM</li>
+<li><b>통화</b>: 반드시 <b>JPY / Japanese Yen</b> 선택</li>
+<li>KRW 환산 선택이 나오면 피하고 <b>현지통화 JPY</b>로 출금</li>
+<li>추천 첫 출금액: <b>¥20,000~¥30,000</b></li>
+</ul></div>
+
+<div class="section"><h4>ATM 이용 흐름</h4>
+<p>카드 삽입 → 언어 선택 → Withdrawal → 출금계좌 선택 → 금액 입력 → <b>JPY</b> 선택 → PIN 입력 → 현금 수령</p></div>
+
+<div class="section"><h4>왜 공항에서 먼저?</h4>
+<p>가구라자카의 소규모 식당이나 현금만 받는 상황에 대비할 수 있고, 이후에는 대부분 카드·Suica를 병행하면 현금을 많이 들고 다닐 필요가 없습니다.</p></div>
+
+<div class="actions">
+<a class="primary" target="_blank" href="https://www.google.com/maps/search/?api=1&query=Seven+Bank+ATM+Narita+Airport+Terminal+3">T3 Seven Bank ATM 지도</a>
+<a target="_blank" href="https://www.narita-airport.jp/en/service/exchange/atm/">나리타공항 ATM 안내</a>
+<a target="_blank" href="https://www.sevenbank.co.jp/intlcard/index2.html">Seven Bank 해외카드 안내</a>
+</div>
+
+<div class="food-note">보조 팁: 현금은 ¥20,000~¥30,000 정도만 시작하고, 부족하면 시내 Seven Bank ATM에서 추가 출금하는 방식이 편합니다.</div>`},
+
+ d1b:{t:'나리타 T3 도착',m:'10/29 10:50',b:`
+<div class="section"><h4>도착 후 순서</h4>
+<ol>
+<li>입국심사</li>
+<li>수하물 수령</li>
+<li><b>T3 Seven Bank ATM에서 트래블월렛으로 엔화 출금</b></li>
+<li>T2·3 철도역 표지 따라 이동</li>
+<li><b>N'EX 왕복티켓 수령 + 당일 지정석 선택</b></li>
+<li>신주쿠 이동</li>
+</ol></div>
+
+<div class="section"><h4>예상 소요</h4>
+<p>착륙 후 입국심사·수하물·ATM 출금·철도역 이동까지 약 <b>60~90분</b> 정도를 잡습니다. 첫날은 이 시간 변동을 감안해 느슨하게 운영.</p></div>
+
+<div class="section"><h4>ATM 출금 메모</h4>
+<p>트래블월렛 실물카드 사용 → <b>JPY / Japanese Yen</b> 선택 → 첫 출금은 <b>¥20,000~¥30,000</b> 정도 추천.</p></div>`},
  d1c:{t:"N'EX 왕복티켓 발권",m:'나리타공항 T2·3역 → 신주쿠',b:`<div class="section"><h4>발권</h4><ol><li>JR EAST Travel Service Center 또는 지정석 발매기 이동</li><li>여권 준비</li><li><b>N'EX TOKYO Round Trip Ticket</b> 구매</li><li>가는 편 신주쿠행 지정석 선택</li><li>가능하면 11/1 귀국편 좌석도 함께 지정</li></ol></div><div class="section"><h4>주의</h4><p>N'EX는 Suica만 찍고 타는 일반열차가 아니라 특급권/지정석이 필요한 열차.</p></div><div class="costbox"><b>💴 공항 이동비</b><span>N’EX 도쿄 왕복티켓 성인 1인 ¥5,200 → 2인 총 ¥10,400. DAY 1·DAY 4 왕복 전체 비용입니다.</span></div><div class="actions"><a class="primary" target="_blank" href="https://www.jreast.co.jp/ko/multi/pass/nex.html">JR 공식 안내</a><a target="_blank" href="https://www.google.com/maps/dir/?api=1&origin=Narita+Airport+Terminal+3&destination=Shinjuku+Station&travelmode=transit">길찾기</a></div>`},
  d1d:{t:'신주쿠역 → 호텔',m:'Hotel Sunlite Shinjuku',b:`<div class="section"><h4>추천</h4><p>도착일은 캐리어가 있으므로 신주쿠역에서 호텔까지 택시가 편함. 전철 환승보다 체력 절약 우선.</p></div><div class="costbox"><b>💴 신주쿠역 → 호텔</b><span>택시 약 ¥900~1,500/대 예상. 짐이 적으면 JR 신주쿠 동쪽출구에서 도보 약 10분으로 ¥0.</span></div><div class="actions"><a class="primary" target="_blank" href="https://www.google.com/maps/search/?api=1&query=Hotel+Sunlite+Shinjuku">호텔 지도</a></div>`},
  d1e:{t:'체크인 & 휴식',m:'15:00',b:`<div class="section"><h4>운영 원칙</h4><p>첫날은 최소 45~60분 쉬고 외출. 일정이 늦어지면 쇼핑시간을 줄이고 저녁을 우선.</p></div>`},
