@@ -147,14 +147,14 @@ main{padding:16px 14px}.panel{display:none}.panel.active{display:block}
     <div class="panel-title"><h2>DAY 3 · 10/31 토</h2><span class="tag">관광 + 아기용품</span></div>
     <div class="timeline">
       <button class="event" data-detail="d3a"><div class="time">08:00</div><div><b>아침</b><span>물·간식 준비</span></div><div class="arrow">›</div></button>
-      <button class="event important" data-detail="d3b"><div class="time">09:00</div><div><b>신주쿠 → 아사쿠사</b><span>지하철 · Suica</span></div><div class="arrow">›</div></button>
+      <button class="event important" data-detail="d3b"><div class="time">09:00</div><div><b>신주쿠 → 아사쿠사</b><span>지하철 약 35~45분 · 환승 1회</span></div><div class="arrow">›</div></button>
       <button class="event" data-detail="d3c"><div class="time">10:00</div><div><b>센소지·나카미세</b><span>약 90분</span></div><div class="arrow">›</div></button>
       <button class="event" data-detail="d3d"><div class="time">11:30</div><div><b>점심 + 말차</b><span>교자/일식 + 디저트</span></div><div class="arrow">›</div></button>
-      <button class="event important" data-detail="d3e"><div class="time">12:40</div><div><b>아사쿠사 → 긴시초</b><span>택시 우선 추천</span></div><div class="arrow">›</div></button>
+      <button class="event important" data-detail="d3e"><div class="time">12:40</div><div><b>아사쿠사 → 긴시초</b><span>택시 약 15~20분 / 대중교통 약 25~35분</span></div><div class="arrow">›</div></button>
       <button class="event important" data-detail="d3f"><div class="time">13:10</div><div><b>⭐ 아카짱혼포 집중 쇼핑</b><span>알카킷 긴시초 5F</span></div><div class="arrow">›</div></button>
       <button class="event" data-detail="d3g"><div class="time">15:30</div><div><b>카페 휴식</b><span>산 것 정리·가격 비교</span></div><div class="arrow">›</div></button>
       <button class="event" data-detail="d3h"><div class="time">16:15</div><div><b>선택: 니시마츠야</b><span>의류·생활용품 위주</span></div><div class="arrow">›</div></button>
-      <button class="event" data-detail="d3i"><div class="time">17:30</div><div><b>긴시초 → 신주쿠</b><span>JR · Suica</span></div><div class="arrow">›</div></button>
+      <button class="event" data-detail="d3i"><div class="time">17:30</div><div><b>긴시초 → 신주쿠</b><span>JR 약 25~30분 · 호텔까지 총 35~45분</span></div><div class="arrow">›</div></button>
       <button class="event" data-detail="d3k"><div class="time">18:30</div><div><b>신주쿠 저녁</b><span>유명점 3곳 중 컨디션 따라 선택</span></div><div class="arrow">›</div></button>
       <button class="event" data-detail="d3j"><div class="time">20:00</div><div><b>호텔 복귀·짐 정리</b><span>면세품/수하물 정리</span></div><div class="arrow">›</div></button>
     </div>
@@ -164,9 +164,9 @@ main{padding:16px 14px}.panel{display:none}.panel.active{display:block}
     <div class="panel-title"><h2>DAY 4 · 11/1 일</h2><span class="tag">귀국</span></div>
     <div class="timeline">
       <button class="event" data-detail="d4a"><div class="time">07:30</div><div><b>기상·아침</b><span>마지막 짐 정리</span></div><div class="arrow">›</div></button>
-      <button class="event" data-detail="d4b"><div class="time">09:30</div><div><b>호텔 → 신주쿠역</b><span>짐 많으면 택시</span></div><div class="arrow">›</div></button>
-      <button class="event important" data-detail="d4c"><div class="time">10:00~</div><div><b>N'EX → 나리타</b><span>왕복티켓 귀국편 사용</span></div><div class="arrow">›</div></button>
-      <button class="event" data-detail="d4d"><div class="time">11:20~</div><div><b>T3 체크인·출국</b><span>공항 2시간 이상 여유</span></div><div class="arrow">›</div></button>
+      <button class="event" data-detail="d4b"><div class="time">09:20</div><div><b>호텔 → 신주쿠역</b><span>택시 약 10분 / 도보 약 20분</span></div><div class="arrow">›</div></button>
+      <button class="event important" data-detail="d4c"><div class="time">10:08</div><div><b>N'EX 17 → 나리타</b><span>11:23 도착 · 1시간 15분</span></div><div class="arrow">›</div></button>
+      <button class="event" data-detail="d4d"><div class="time">11:23~11:40</div><div><b>제2·3터미널역 → T3</b><span>도보 약 10~15분 후 체크인</span></div><div class="arrow">›</div></button>
       <button class="event important" data-detail="d4e"><div class="time">14:00</div><div><b>나리타 출발</b><span>17:05 인천 T1 도착</span></div><div class="arrow">›</div></button>
       <button class="event important" data-detail="d4f"><div class="time">18:00~</div><div><b>인천공항 → 답십리역 주변</b><span>① AREX+5호선 ② 택시 ③ 6002번</span></div><div class="arrow">›</div></button>
     </div>
@@ -482,7 +482,18 @@ const DETAILS={
 <div class="food-pick"><div class="food-top"><b>BERG</b><span class="kind">로컬 카페</span></div><p>신주쿠역 안쪽의 오래된 소형 카페. 토스트·커피 위주라 해리포터 가기 전 빠르게 먹기 좋음.</p><div class="costline">💴 예상 2인 ¥1,500~2,500 (약 1.3~2.1만원)</div><div class="loc">📍 JR 신주쿠역 동쪽 출구권</div><a target="_blank" href="https://www.google.com/maps/search/?api=1&query=BERG+Shinjuku">지도 열기 →</a></div>
 </div><div class="food-note">해리포터 날은 식당 대기시간까지 생각해 07:00~07:20 사이 호텔을 나서는 선택이 가장 여유로워요.</div></div>
 <div class="costbox"><b>💴 DAY 3 아침 예산</b><span>2인 약 ¥1,500~5,000.</span></div>`},
- d3b:{t:'신주쿠 → 아사쿠사',m:'09:00 출발',b:`<div class="section"><h4>이동</h4><p>Google Maps 안내에 따라 도쿄메트로 이용. 개찰구에서는 iPhone Suica 태그.</p></div><div class="costbox"><b>💴 신주쿠 → 아사쿠사</b><span>도쿄메트로/도에이 조합에 따라 약 ¥250~450/인·편도. 2인 약 ¥500~900 예상.</span></div><div class="actions"><a class="primary" target="_blank" href="https://www.google.com/maps/dir/?api=1&origin=Hotel+Sunlite+Shinjuku&destination=Senso-ji+Tokyo&travelmode=transit">길찾기</a></div>`},
+ d3b:{t:'신주쿠 → 아사쿠사',m:'09:00 출발 · 약 35~45분',b:`
+<div class="section"><h4>추천 경로</h4>
+<table>
+<tr><th>구간</th><th>예상</th></tr>
+<tr><td>호텔 → 신주쿠산초메역</td><td>도보 약 8~10분</td></tr>
+<tr><td>신주쿠산초메 → 아사쿠사</td><td>도쿄메트로 이용 · 환승 1회 · 약 25~30분</td></tr>
+<tr><td>아사쿠사역 → 센소지</td><td>도보 약 5~10분</td></tr>
+<tr><td><b>전체</b></td><td><b>약 35~45분</b></td></tr>
+</table></div>
+<div class="section"><h4>이동 팁</h4>
+<p>출발 시점의 실시간 환승안내를 보고 <b>신주쿠산초메 → 아사쿠사</b> 경로를 선택하면 됩니다. 환승 1회가 일반적이고, Suica로 바로 이동 가능합니다.</p></div>
+<div class="actions"><a class="primary" target="_blank" href="https://www.google.com/maps/dir/?api=1&origin=Hotel+Sunlite+Shinjuku&destination=Sensoji+Temple&travelmode=transit">실시간 길찾기</a></div>`},
  d3c:{t:'센소지·나카미세',m:'10:00~11:30',b:`<div class="section"><h4>관광 범위</h4><p>가미나리몬 → 나카미세 → 센소지. 90분 정도만 잡고 골목까지 넓히지 않기.</p></div>`},
  d3d:{t:'점심 + 말차',m:'11:30~12:30',b:`<div class="section"><h4>점심 운영</h4><p>토요일이라 대기를 감안해 11:20~11:30 입장을 목표. 점심 후 말차는 가까운 곳 한 군데만 선택.</p></div>
 <div class="section"><h4>아사쿠사 점심 추천 3곳</h4><div class="food-list">
@@ -496,18 +507,41 @@ const DETAILS={
 <div class="food-pick"><div class="food-top"><b>MARUZEN Tea Roastery</b><span class="kind">일본차·젤라토</span></div><p>말차와 일본차, 젤라토를 함께 보는 티 로스터리. 아사쿠사역·가미나리몬에서 가까워 동선이 편함.</p><div class="costline">💴 차·젤라토 예상 2인 ¥1,500~2,500</div><div class="loc">📍 1-36-2 Asakusa · 가미나리몬 약 2분</div><a target="_blank" href="https://www.google.com/maps/search/?api=1&query=MARUZEN+Tea+Roastery+Asakusa">지도 열기 →</a></div>
 </div></div>
 <div class="costbox"><b>💴 아사쿠사 점심 + 말차 예산</b><span>무기토로/텐동 선택 시 2인 약 ¥6,000~10,000 + 말차 ¥1,500~2,500. 이마한 선택 시 점심만 ¥10,780 이상.</span></div>`},
- d3e:{t:'아사쿠사 → 긴시초',m:'12:40',b:`<div class="section"><h4>추천</h4><p>임신 중 + 이후 쇼핑백 발생을 고려해 택시 우선. 전철도 가능하지만 환승/도보 부담이 늘 수 있음.</p></div><div class="costbox"><b>💴 아사쿠사 → 긴시초</b><span>택시 약 ¥1,500~2,300/대 예상. 대중교통 이용 시 2인 약 ¥400~700 정도.</span></div><div class="actions"><a class="primary" target="_blank" href="https://www.google.com/maps/dir/?api=1&origin=Senso-ji+Tokyo&destination=Akachan+Honpo+Arcakit+Kinshicho&travelmode=transit">대중교통</a></div>`},
+ d3e:{t:'아사쿠사 → 긴시초',m:'12:40 출발',b:`
+<div class="section"><h4>추천: 택시</h4>
+<p>아사쿠사에서 아카짱혼포가 있는 <b>Arcakit Kinshicho</b>까지 택시로 약 <b>15~20분</b> 예상. 임신 중이고 쇼핑 전 체력 보존이 중요해서 가장 편한 선택입니다.</p></div>
+<div class="section"><h4>대중교통 대안</h4>
+<p>도보·환승을 포함하면 약 <b>25~35분</b> 정도를 잡는 편이 안전합니다. 짐이 없고 컨디션이 좋을 때만 대중교통 추천.</p></div>
+<div class="actions"><a class="primary" target="_blank" href="https://www.google.com/maps/dir/?api=1&origin=Sensoji+Temple&destination=Arcakit+Kinshicho&travelmode=transit">대중교통 길찾기</a><a target="_blank" href="https://www.google.com/maps/dir/?api=1&origin=Sensoji+Temple&destination=Arcakit+Kinshicho&travelmode=driving">택시 경로 보기</a></div>`},
  d3f:{t:'아카짱혼포 긴시초',m:'13:10~15:30',b:`<div class="section"><h4>우선순위</h4><ul><li>Pigeon 신생아 손톱가위/젖병 부품</li><li>Combi · Richell 수유/이유식/목욕 소도구</li><li>거즈·턱받이·방취봉투</li><li>신생아 의류는 적당량만</li></ul></div><div class="section"><h4>비추천</h4><p>기저귀·물티슈 대량은 부피 대비 효율이 낮음.</p></div><div class="actions"><a class="primary" target="_blank" href="https://stores.akachan.jp/35">공식 매장</a><a target="_blank" href="https://www.google.com/maps/search/?api=1&query=Akachan+Honpo+Arcakit+Kinshicho">지도</a></div>`},
  d3g:{t:'카페 휴식',m:'15:30~16:10',b:`<div class="section"><h4>이 시간에 할 것</h4><p>산 것 정리 → 필요한 것 빠진지 체크 → 한국 가격과 비교 → 추가구매 결정.</p></div><div class="costbox"><b>💴 카페 휴식 예산</b><span>2인 음료·간식 약 ¥1,500~2,500.</span></div>`},
- d3h:{t:'니시마츠야',m:'16:15 · 선택',b:`<div class="section"><h4>목적</h4><p>가성비 의류·생활용품을 더 볼 때만. 아카짱혼포에서 충분히 샀으면 생략.</p></div>`},
- d3i:{t:'긴시초 → 신주쿠',m:'17:30',b:`<div class="section"><h4>이동</h4><p>JR 계열 이용. 개찰구는 Suica 태그. 쇼핑백이 많으면 신주쿠역 도착 후 호텔까지 택시.</p></div><div class="costbox"><b>💴 긴시초 → 신주쿠</b><span>JR 이용 시 약 ¥260/인 → 2인 약 ¥520. 신주쿠역→호텔 택시 추가 시 약 ¥900~1,500/대.</span></div>`},
- d3k:{t:'신주쿠 저녁',m:'18:30~19:40',b:`<div class="section"><h4>DAY 3 마무리</h4><p>쇼핑백이 많으므로 신주쿠산초메/호텔 근처에서 식사 후 바로 복귀.</p></div>
-<div class="section"><h4>신주쿠 저녁 추천 3곳</h4><div class="food-list">
-<div class="food-pick"><div class="food-top"><b>신주쿠 갓포 나카지마</b><span class="kind">일식</span></div><p>신주쿠산초메의 전통 일식집. 저녁은 코스 중심이라 조용하고 특별한 식사를 원할 때.</p><div class="costline">💴 저녁 예상 2인 ¥20,000~30,000+ (약 16.8~25.2만원+)</div><div class="loc">📍 3-32-5 Shinjuku, B1 · 신주쿠산초메역 약 2분</div><a target="_blank" href="https://www.google.com/maps/search/?api=1&query=Shinjuku+Kappo+Nakajima">지도 열기 →</a></div>
-<div class="food-pick"><div class="food-top"><b>Tempura Funabashiya Shinjuku</b><span class="kind">에도식 튀김</span></div><p>오래된 신주쿠 텐푸라 전문점. 카운터에서 바로 튀긴 일본식 튀김을 먹는 경험이 포인트.</p><div class="costline">💴 저녁 예상 2인 ¥8,000~10,000 (약 6.7~8.4만원)</div><div class="loc">📍 3-28-14 Shinjuku · 신주쿠산초메역 약 1분</div><a target="_blank" href="https://www.google.com/maps/search/?api=1&query=Tempura+Funabashiya+Shinjuku">지도 열기 →</a></div>
-<div class="food-pick"><div class="food-top"><b>MO-MO-PARADISE 신주쿠산초메</b><span class="kind">스키야키·샤브샤브</span></div><p>일본식 스키야키/샤브샤브를 편하게 즐기기 좋은 곳. 신주쿠산초메역 바로 근처라 숙소 복귀도 편함.</p><div class="costline">💴 기본 코스 2인 약 ¥9,900~12,760 (약 8.3~10.7만원)</div><div class="loc">📍 3-30-11 Shinjuku 8F · 신주쿠산초메역 약 1분</div><a target="_blank" href="https://www.google.com/maps/search/?api=1&query=MO-MO-PARADISE+Shinjuku-Sanchome">지도 열기 →</a></div>
-</div><div class="food-note">임신 중에는 고기·달걀·생선은 충분히 익힌 메뉴로 주문하고, 스키야키의 날달걀 찍어먹기는 생략하는 편이 안전합니다.</div></div>
-<div class="costbox"><b>💴 DAY 3 저녁 예산</b><span>2인 약 ¥8,000~12,000 권장.</span></div>`},
+ d3h:{t:'긴시초 → 신주쿠',m:'17:30 출발 · 약 30~40분',b:`
+<div class="section"><h4>추천 경로</h4>
+<table>
+<tr><th>구간</th><th>예상</th></tr>
+<tr><td>Arcakit Kinshicho → 긴시초역</td><td>도보 약 3~5분</td></tr>
+<tr><td>긴시초 → 신주쿠</td><td><b>JR 주오·소부선</b> 약 25~30분</td></tr>
+<tr><td>신주쿠역 → 호텔</td><td>도보 약 15분 또는 택시 5~10분</td></tr>
+<tr><td><b>전체</b></td><td><b>약 30~45분</b></td></tr>
+</table></div>
+<div class="food-note">쇼핑 짐이 많으면 신주쿠역 도착 후 호텔까지는 택시가 편합니다.</div>
+<div class="actions"><a class="primary" target="_blank" href="https://www.google.com/maps/dir/?api=1&origin=Arcakit+Kinshicho&destination=Hotel+Sunlite+Shinjuku&travelmode=transit">실시간 길찾기</a></div>`},
+ d3i:{t:'긴시초 → 신주쿠',m:'17:30 출발 · 호텔까지 약 35~45분',b:`
+<div class="section"><h4>추천 경로</h4>
+<table>
+<tr><th>구간</th><th>예상</th></tr>
+<tr><td>Arcakit Kinshicho → 긴시초역</td><td>도보 약 3~5분</td></tr>
+<tr><td>긴시초 → 신주쿠</td><td><b>JR 주오·소부선</b> 약 25~30분</td></tr>
+<tr><td>신주쿠역 → 호텔</td><td>도보 약 15~20분 / 택시 약 5~10분</td></tr>
+<tr><td><b>전체</b></td><td><b>약 35~45분</b></td></tr>
+</table></div>
+<div class="food-note">아기용품 쇼핑 짐이 많으면 신주쿠역에서 호텔까지는 택시가 가장 편합니다.</div>
+<div class="actions"><a class="primary" target="_blank" href="https://www.google.com/maps/dir/?api=1&origin=Arcakit+Kinshicho&destination=Hotel+Sunlite+Shinjuku&travelmode=transit">실시간 길찾기</a></div>`},
+ d3k:{t:'신주쿠 저녁',m:'18:30 전후 · 컨디션 따라 선택',b:`
+<div class="section"><h4>이동 포함</h4>
+<p>긴시초에서 신주쿠역 도착 후 바로 식사할 경우 역 주변 식당을 이용하면 이동을 최소화할 수 있습니다. 호텔에 먼저 짐을 두고 나오면 추가로 약 15~30분을 잡으세요.</p></div>
+<div class="section"><h4>추천 방식</h4>
+<p>DAY 3는 아사쿠사 관광과 아기용품 쇼핑으로 이미 많이 걷는 날이라, 저녁은 예약이 빡빡한 곳보다 신주쿠역·신주쿠산초메 주변에서 대기 짧은 곳을 선택하는 편이 좋습니다.</p></div>`},
  d3j:{t:'호텔 복귀·짐 정리',m:'20:00',b:`<div class="section"><h4>귀국 준비</h4><ul><li>면세품 분리</li><li>액체류 위탁수하물</li><li>아기용품 박스/포장 최소화</li><li>다음날 여권·탑승권 바로 꺼낼 위치에</li></ul></div>`},
  d4a:{t:'마지막 아침',m:'07:30',b:`<div class="section"><h4>팁</h4><p>마지막 날 관광은 넣지 않음. 시간 여유가 있으면 아래 중 하나, 아니면 편의점 조식으로 단순화.</p></div>
 <div class="section"><h4>근처 아침 추천 3곳</h4><div class="food-list">
@@ -516,32 +550,49 @@ const DETAILS={
 <div class="food-pick"><div class="food-top"><b>BERG</b><span class="kind">로컬 카페</span></div><p>신주쿠역 안쪽의 오래된 소형 카페. 토스트·커피 위주라 해리포터 가기 전 빠르게 먹기 좋음.</p><div class="costline">💴 예상 2인 ¥1,500~2,500 (약 1.3~2.1만원)</div><div class="loc">📍 JR 신주쿠역 동쪽 출구권</div><a target="_blank" href="https://www.google.com/maps/search/?api=1&query=BERG+Shinjuku">지도 열기 →</a></div>
 </div><div class="food-note">해리포터 날은 식당 대기시간까지 생각해 07:00~07:20 사이 호텔을 나서는 선택이 가장 여유로워요.</div></div>
 <div class="costbox"><b>💴 마지막 아침 예산</b><span>2인 약 ¥1,500~5,000. 공항 이동 전 간단히 먹는 편이 편함.</span></div>`},
- d4b:{t:'호텔 → 신주쿠역',m:'09:30',b:`<div class="section"><h4>추천</h4><p>캐리어/쇼핑백이 많으면 택시. N'EX 출발 20~30분 전 역 도착 목표.</p></div><div class="costbox"><b>💴 호텔 → 신주쿠역</b><span>택시 약 ¥900~1,500/대 예상. 짐이 적으면 도보로 ¥0.</span></div>`},
- d4c:{t:"N'EX → 나리타",m:'11/1 · 예약 확정',b:`
-<div class="section"><h4>확정 예약</h4>
+ d4b:{t:'호텔 → 신주쿠역',m:'09:20 출발 권장',b:`
+<div class="section"><h4>이동</h4>
 <ul>
-<li><b>Narita-Express (SHINJUKU) 17</b></li>
-<li><b>신주쿠 10:08 → 나리타공항 제2·3터미널 11:23</b></li>
-<li><b>5호차 13C / 13D</b></li>
-<li>어른 2명</li>
+<li><b>택시</b>: 약 10분 전후 — 캐리어가 있으면 추천</li>
+<li><b>도보</b>: 약 20분 전후 — 짐이 적을 때만</li>
 </ul></div>
-
+<div class="section"><h4>왜 09:20 출발?</h4>
+<p>N'EX 17호가 <b>10:08 출발</b>이므로, 신주쿠역의 큰 규모와 승강장 이동을 고려해 최소 30분 이상 여유를 두는 일정입니다.</p></div>
+<div class="actions"><a class="primary" target="_blank" href="https://www.google.com/maps/dir/?api=1&origin=Hotel+Sunlite+Shinjuku&destination=Shinjuku+Station&travelmode=walking">도보 경로</a></div>`},
+ d4c:{t:"N'EX 17 → 나리타",m:'11/1 · 예약 확정',b:`
+<div class="section"><h4>확정 예약</h4>
+<table>
+<tr><th>항목</th><th>내용</th></tr>
+<tr><td>열차</td><td><b>Narita Express 17</b></td></tr>
+<tr><td>신주쿠 출발</td><td><b>10:08</b></td></tr>
+<tr><td>나리타 제2·3터미널역 도착</td><td><b>11:23</b></td></tr>
+<tr><td>열차 이동시간</td><td><b>1시간 15분</b></td></tr>
+<tr><td>좌석</td><td><b>5호차 13C / 13D</b></td></tr>
+</table></div>
 <div class="section"><h4>발권 QR</h4>
 <div class="qr-card">
 <a href="nex_qr_full.png" target="_blank" rel="noopener"><img src="nex_qr_full.png" alt="NEX 발권 QR 전체 화면"></a>
 <div class="qr-meta">
 <p><b>예약번호</b>: E58735</p>
 <p><b>수령 코드</b>: 31412444231521268</p>
-<p><b>이미지를 누르면 전체 캡처가 새 창으로 열립니다.</b></p>
+<p>이미지를 누르면 전체 캡처가 새 창으로 열립니다.</p>
 </div></div></div>
-
-<div class="section"><h4>지도</h4>
+<div class="section"><h4>공식 시간 확인</h4>
+<p>JR 동일본 2026년 11월 시각표 기준 <b>신주쿠 10:08 출발 → 나리타공항 제2·3터미널 11:23 도착</b>.</p></div>
 <div class="route-links">
-<a class="primary" target="_blank" href="https://www.google.com/maps/dir/?api=1&origin=Hotel+Sunlite+Shinjuku&destination=Shinjuku+Station&travelmode=walking">숙소 → 신주쿠역</a>
-<a target="_blank" href="https://www.google.com/maps/dir/?api=1&origin=Shinjuku+Station&destination=Narita+Airport+Terminal+2+3+Station&travelmode=transit">신주쿠역 → 나리타역</a>
-<a target="_blank" href="https://www.google.com/maps/dir/?api=1&origin=Narita+Airport+Terminal+2+3+Station&destination=Narita+Airport+Terminal+3&travelmode=walking">나리타역 → T3</a>
-</div></div>`},
- d4d:{t:'나리타 T3 체크인',m:'11:20~13:20',b:`<div class="section"><h4>순서</h4><p>T3 이동 → 제주항공 체크인/수하물 → 출국심사 → 점심/면세점.</p></div><div class="costbox"><b>💴 공항 식사 예산</b><span>2인 간단한 점심·음료 약 ¥2,500~4,000 예상.</span></div>`},
+<a class="primary" target="_blank" href="https://www.google.com/maps/dir/?api=1&origin=Shinjuku+Station&destination=Narita+Airport+Terminal+2+3+Station&travelmode=transit">신주쿠 → 나리타 지도</a>
+</div>`},
+ d4d:{t:'제2·3터미널역 → T3 체크인',m:'11:23 도착 후 약 10~15분 이동',b:`
+<div class="section"><h4>이동</h4>
+<p>N'EX는 <b>Narita Airport Terminal 2・3 Station</b>에 도착합니다. 여기서 표지판의 <b>Terminal 3</b> 방향을 따라 도보 이동.</p>
+<ul>
+<li>역 → T3: 약 <b>10~15분</b></li>
+<li>11:23 역 도착 → 약 <b>11:35~11:40</b> T3 도착 예상</li>
+<li>14:00 비행기까지 약 2시간 20분 이상 확보</li>
+</ul></div>
+<div class="section"><h4>공항에서</h4>
+<p>체크인·수하물 위탁 → 보안검색 → 출국심사 → 탑승구 이동 순서. 쇼핑을 하더라도 탑승구 위치를 먼저 확인하는 것이 안전합니다.</p></div>
+<div class="actions"><a class="primary" target="_blank" href="https://www.google.com/maps/dir/?api=1&origin=Narita+Airport+Terminal+2+3+Station&destination=Narita+Airport+Terminal+3&travelmode=walking">역 → T3 지도</a></div>`},
  d4e:{t:'귀국편',m:'14:00 NRT → 17:05 ICN',b:`<div class="section"><h4>도착</h4><p>인천공항 T1 도착 예정.</p></div>`},
  d4f:{t:'인천공항 → 답십리역 주변',m:'11/1 저녁 · 귀가 3가지 방법',b:`
 <div class="section"><h4>입국 후 공통 예상</h4>
