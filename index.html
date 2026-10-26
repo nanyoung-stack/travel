@@ -171,6 +171,7 @@ main{padding:16px 14px}.panel{display:none}.panel.active{display:block}
       <button class="event important" data-detail="prep6"><div class="time">Suica</div><div><b>충전 계획 · 일별 사용액</b><span>1인 ¥3,000부터 추천</span></div><div class="arrow">›</div></button>
       <button class="event important" data-detail="prep2"><div class="time">N'EX</div><div><b>왕복권 · QR · 지정석</b><span>가는 편 현장 지정 / 오는 편 확정</span></div><div class="arrow">›</div></button>
       <button class="event" data-detail="prep5"><div class="time">예산</div><div><b>교통·식비 전체 예상</b><span>2인 기준 · 쇼핑 제외</span></div><div class="arrow">›</div></button>
+      <button class="event important" data-detail="prepChecklist"><div class="time">CHECK</div><div><b>여행 준비 체크리스트</b><span>여권 · 전자기기 · 의류 · 위생 · 태교여행</span></div><div class="arrow">›</div></button>
       <button class="event important" data-detail="prep3"><div class="time">STOKKE</div><div><b>2018년 본체 호환 확인</b><span>뉴본세트 · 베이비세트2 · 트레이</span></div><div class="arrow">›</div></button>
       <button class="event" data-detail="prep4"><div class="time">출발 전</div><div><b>필수 체크리스트</b><span>여권·QR·재고·수하물</span></div><div class="arrow">›</div></button>
     </div>
@@ -241,7 +242,49 @@ const DETAILS={
  d1a:{t:'인천공항 출발',m:'10/29 08:25 · 인천 T1',b:`<div class="section"><h4>팁</h4><p>국제선이므로 최소 2시간 전 공항 도착 권장. 제주항공 체크인카운터 위치는 출발 전날 앱/공항 안내에서 확인.</p></div>`},
  d1b:{t:'나리타 T3 도착',m:'10/29 10:50',b:`<div class="section"><h4>도착 후</h4><ul><li>입국심사</li><li>수하물 수령</li><li>T2·3 철도역 표지 따라 이동</li></ul></div><div class="section"><h4>예상 소요</h4><p>약 60~90분. 첫날 일정은 이 시간 변동을 감안해 느슨하게 잡음.</p></div>`},
  d1c:{t:"N'EX 왕복티켓 발권",m:'나리타공항 T2·3역 → 신주쿠',b:`<div class="section"><h4>발권</h4><ol><li>JR EAST Travel Service Center 또는 지정석 발매기 이동</li><li>여권 준비</li><li><b>N'EX TOKYO Round Trip Ticket</b> 구매</li><li>가는 편 신주쿠행 지정석 선택</li><li>가능하면 11/1 귀국편 좌석도 함께 지정</li></ol></div><div class="section"><h4>주의</h4><p>N'EX는 Suica만 찍고 타는 일반열차가 아니라 특급권/지정석이 필요한 열차.</p></div><div class="costbox"><b>💴 공항 이동비</b><span>N’EX 도쿄 왕복티켓 성인 1인 ¥5,200 → 2인 총 ¥10,400. DAY 1·DAY 4 왕복 전체 비용입니다.</span></div><div class="actions"><a class="primary" target="_blank" href="https://www.jreast.co.jp/ko/multi/pass/nex.html">JR 공식 안내</a><a target="_blank" href="https://www.google.com/maps/dir/?api=1&origin=Narita+Airport+Terminal+3&destination=Shinjuku+Station&travelmode=transit">길찾기</a></div>`},
- d1d:{t:'신주쿠역 → 호텔',m:'Hotel Sunlite Shinjuku',b:`<div class="section"><h4>추천</h4><p>도착일은 캐리어가 있으므로 신주쿠역에서 호텔까지 택시가 편함. 전철 환승보다 체력 절약 우선.</p></div><div class="costbox"><b>💴 신주쿠역 → 호텔</b><span>택시 약 ¥900~1,500/대 예상. 짐이 적으면 JR 신주쿠 동쪽출구에서 도보 약 10분으로 ¥0.</span></div><div class="actions"><a class="primary" target="_blank" href="https://www.google.com/maps/search/?api=1&query=Hotel+Sunlite+Shinjuku">호텔 지도</a></div>`},
+ d1d:{t:'1안 · 가구라자카 전통 골목',m:'10/29 첫날 · 약 2시간 30분',b:`
+<div class="section"><h4>추천 시간표</h4>
+<table>
+<tr><th>시간</th><th>일정</th></tr>
+<tr><td>16:30</td><td>호텔 출발</td></tr>
+<tr><td>17:00~17:20</td><td><b>아카기신사</b> 참배·산책</td></tr>
+<tr><td>17:20~17:50</td><td><b>가구라자카 골목 / 효고요코초</b> 산책</td></tr>
+<tr><td>17:50~18:10</td><td><b>비샤몬텐 젠코쿠지</b></td></tr>
+<tr><td>18:10~19:10</td><td>가구라자카에서 일본식 저녁</td></tr>
+<tr><td>19:10~20:00</td><td>호텔 복귀</td></tr>
+</table></div>
+<div class="section"><h4>아카기신사</h4>
+<p>오래된 신사이면서 현재 건물은 건축가 <b>구마 겐고</b>가 재설계해 전통과 현대 일본 건축이 섞인 분위기입니다. 가구라자카역과 가까워 첫 방문지로 편합니다.</p></div>
+<div class="section"><h4>효고요코초 · 가구라자카 골목</h4>
+<p>돌길, 좁은 골목, 전통 일본식 식당이 모여 있어 <b>옛 도쿄 골목 분위기</b>를 느끼기 좋은 구간입니다.</p></div>
+<div class="section"><h4>비샤몬텐 젠코쿠지</h4>
+<p>1595년에 창건된 불교 사찰로, 붉은 문과 전통 지붕 때문에 아카기신사보다 <b>고전적인 일본 분위기</b>가 강합니다.</p></div>
+<div class="section"><h4>저녁</h4>
+<p>첫날은 소바·우동·야키토리·정식처럼 부담 적은 일본식 식사를 추천합니다.</p></div>
+<div class="route-links">
+<a class="primary" target="_blank" href="https://www.google.com/maps/dir/?api=1&origin=Hotel+Sunlite+Shinjuku&destination=Akagi+Shrine+Tokyo&travelmode=transit">호텔 → 아카기신사</a>
+<a target="_blank" href="https://www.google.com/maps/dir/?api=1&origin=Akagi+Shrine+Tokyo&destination=Zenkokuji+Temple+Kagurazaka&travelmode=walking">아카기신사 → 젠코쿠지</a>
+<a target="_blank" href="https://www.google.com/maps/dir/?api=1&origin=Zenkokuji+Temple+Kagurazaka&destination=Hotel+Sunlite+Shinjuku&travelmode=transit">젠코쿠지 → 호텔</a>
+</div>`},
+
+ d1g:{t:'2안 · 신주쿠 야경 산책',m:'10/29 첫날 · 이동 부담 최소',b:`
+<div class="section"><h4>추천 시간표</h4>
+<table>
+<tr><th>시간</th><th>일정</th></tr>
+<tr><td>16:30</td><td>호텔 출발</td></tr>
+<tr><td>16:40~17:10</td><td><b>하나조노신사</b></td></tr>
+<tr><td>17:10~17:30</td><td>니시신주쿠 이동</td></tr>
+<tr><td>17:30~18:00</td><td><b>신주쿠 중앙공원</b></td></tr>
+<tr><td>18:00~18:45</td><td><b>도쿄도청 전망대</b> 야경</td></tr>
+<tr><td>19:00~20:00</td><td>신주쿠 저녁 후 호텔 복귀</td></tr>
+</table></div>
+<div class="section"><h4>특징</h4>
+<p>전통적인 일본 느낌은 가구라자카보다 약하지만 숙소와 가깝고 이동 부담이 가장 적습니다.</p></div>
+<div class="route-links">
+<a class="primary" target="_blank" href="https://www.google.com/maps/dir/?api=1&origin=Hotel+Sunlite+Shinjuku&destination=Hanazono+Shrine+Tokyo&travelmode=walking">호텔 → 하나조노신사</a>
+<a target="_blank" href="https://www.google.com/maps/dir/?api=1&origin=Hanazono+Shrine+Tokyo&destination=Tokyo+Metropolitan+Government+Building&travelmode=transit">하나조노신사 → 도청</a>
+</div>`},
+
  d1e:{t:'체크인 & 휴식',m:'15:00',b:`<div class="section"><h4>운영 원칙</h4><p>첫날은 최소 45~60분 쉬고 외출. 일정이 늦어지면 쇼핑시간을 줄이고 저녁을 우선.</p></div>`},
  d1f:{t:'신주쿠 다카시마야',m:'16:15~18:15 · STOKKE / 아기용품',b:`<div class="section"><h4>우선 확인</h4><ul><li>트립트랩 뉴본세트</li><li>베이비세트 2</li><li>원하는 색상 재고</li><li>언니에게 받을 본체: <b>2018.05.29 생산 / S/N 6246600</b></li><li>뉴본세트·베이비세트2·트레이 실물 호환표 최종 확인</li></ul></div><div class="section"><h4>가격 메모</h4><p>뉴본세트 ¥21,340 · 베이비세트2 ¥10,560 · 트레이 ¥9,240 (확인 당시 기준)</p></div><div class="costbox"><b>💴 호텔 → 신주쿠 다카시마야</b><span>도보 이동이면 ¥0. 피곤하면 짧은 택시 이용 시 대략 ¥900~1,300/대 예상.</span></div><div class="actions"><a class="primary" target="_blank" href="https://www.google.com/maps/search/?api=1&query=Shinjuku+Takashimaya">지도</a></div>`},
  d1g:{t:'저녁 + 신주쿠 산책',m:'18:30~20:00',b:`<div class="section"><h4>팁</h4><p>첫날은 맛집 원정 대신 호텔/신주쿠산초메 동선 안에서 해결. 아래 3곳 중 대기 짧은 곳을 선택.</p></div>
@@ -410,6 +453,57 @@ const DETAILS={
 <li><b>버스 선호 → 6002번</b> (답십리 직행이 아니라 3순위)</li>
 </ol>
 <p style="margin-top:6px">귀국 당일 18시쯤 짐 양과 도로상황을 보고 결정하면 됩니다.</p></div>`},
+
+ prepChecklist:{t:'여행 준비 체크리스트',m:'출발 전 최종 확인',b:`
+<div class="section"><h4>필수 서류·결제</h4>
+<label><input type="checkbox"> 여권</label><br>
+<label><input type="checkbox"> 해외결제 카드 2장</label><br>
+<label><input type="checkbox"> 소액 엔화</label><br>
+<label><input type="checkbox"> 항공권·호텔·해리포터·N'EX 예약 QR 저장</label><br>
+<label><input type="checkbox"> 여권 사진/사본 저장</label><br>
+<label><input type="checkbox"> 여행자보험 가입내역</label></div>
+
+<div class="section"><h4>전자기기</h4>
+<label><input type="checkbox"> 일본 호환 충전기 (INPUT 100–240V 확인)</label><br>
+<label><input type="checkbox"> 충전 케이블</label><br>
+<label><input type="checkbox"> 보조배터리 ※ 위탁수하물 금지</label><br>
+<label><input type="checkbox"> 일본 eSIM 설치</label><br>
+<label><input type="checkbox"> iPhone Suica 충전</label></div>
+
+<div class="section"><h4>의류</h4>
+<label><input type="checkbox"> 잠옷</label><br>
+<label><input type="checkbox"> 외투</label><br>
+<label><input type="checkbox"> 여벌옷 2벌</label><br>
+<label><input type="checkbox"> 양말</label><br>
+<label><input type="checkbox"> 속옷</label><br>
+<label><input type="checkbox"> 편한 운동화</label><br>
+<label><input type="checkbox"> 접이식 우산</label></div>
+
+<div class="section"><h4>세면·위생</h4>
+<label><input type="checkbox"> 일회용 베개커버</label><br>
+<label><input type="checkbox"> 칫솔·치약</label><br>
+<label><input type="checkbox"> 일회용 샤워타올</label><br>
+<label><input type="checkbox"> 샤워기 헤드·필터</label><br>
+<label><input type="checkbox"> 클렌징·스킨케어</label><br>
+<label><input type="checkbox"> 빗·머리끈</label><br>
+<label><input type="checkbox"> 휴대용 티슈·물티슈</label><br>
+<label><input type="checkbox"> 손소독제</label></div>
+
+<div class="section"><h4>여행 편의</h4>
+<label><input type="checkbox"> 지퍼백·비닐봉투</label><br>
+<label><input type="checkbox"> 에코백·장바구니</label><br>
+<label><input type="checkbox"> 압축팩</label><br>
+<label><input type="checkbox"> 쇼핑용 접이식 보조가방</label><br>
+<label><input type="checkbox"> 작은 쿠션 또는 목베개</label></div>
+
+<div class="section"><h4>태교여행 추가 확인</h4>
+<label><input type="checkbox"> 산모수첩 또는 임신 관련 기본정보</label><br>
+<label><input type="checkbox"> 평소 복용 중인 영양제·약</label><br>
+<label><input type="checkbox"> 여행 중 이용 가능한 병원 위치 확인</label><br>
+<label><input type="checkbox"> 물병</label><br>
+<label><input type="checkbox"> 오래 걷는 날 신발·휴식시간 확인</label></div>
+
+<div class="food-note">일본은 A형 2핀 콘센트가 일반적입니다. 플러그 모양과 함께 충전기의 <b>INPUT 100–240V</b> 표기를 확인하세요.</div>`},
 
  prep1:{t:'iPhone Suica',m:'시내 교통용',b:`<div class="section"><h4>사용법</h4><p>익스프레스 교통카드로 설정하면 <b>앱을 열지 않고</b> 아이폰 상단을 개찰구 리더기에 바로 태그. Face ID도 보통 필요 없음.</p></div><div class="section"><h4>중요</h4><p>두 사람이 한 장을 같이 쓸 수 없으므로 난영·민채 각각 Suica 1개씩.</p></div><div class="section"><h4>이번 여행 추천</h4><p>1인당 <b>¥3,000</b>부터 충전 → 부족할 때 Wallet에서 추가 충전. 편의점·자판기까지 많이 쓰면 ¥5,000부터 시작.</p></div>`},
  prep6:{t:'Suica 충전 계획',m:'일별 예상 사용액 · 1인 기준',b:`
